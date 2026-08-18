@@ -1,0 +1,159 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #111318;
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* header */
+
+header {
+  background: #181b21;
+  border-bottom: 1px solid #2b2f38;
+}
+
+.navbar {
+  background: #181b21 !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #ffcc33 !important;
+}
+
+/* movies */
+
+.movies-page {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.movies-page h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9da3ad;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.movie-card {
+  background: #1b1f27;
+  border: 1px solid #292e38;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-info {
+  padding: 22px;
+}
+
+.movie-info h2 {
+  margin: 0 0 14px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.movie-meta span {
+  background: #292e38;
+  color: #d8dbe0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.movie-info p {
+  color: #c5c9d0;
+  line-height: 1.6;
+}
+
+.movie-info strong {
+  color: #ffffff;
+}
+
+.description {
+  color: #9da3ad !important;
+}
+
+/* footer */
+
+footer {
+  position: static !important;
+  width: 100%;
+  background: #181b21;
+  border-top: 1px solid #2b2f38;
+  color: #9da3ad;
+  padding: 25px 0;
+  margin-top: 60px;
+  line-height: normal;
+}
+
+footer a {
+  color: #6ea8fe;
+}
+
+/* mobile */
+
+@media (max-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .movie-poster {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .movies-page h1 {
+    font-size: 32px;
+  }
+
+  .movie-poster {
+    height: 450px;
+  }
+}
