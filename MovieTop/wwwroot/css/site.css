@@ -9,9 +9,6 @@ body {
   color: #f2f2f2;
   font-family: Arial, sans-serif;
 }
-
-/* header */
-
 header {
   background: #181b21;
   border-bottom: 1px solid #2b2f38;
@@ -115,8 +112,6 @@ header {
   color: #9da3ad !important;
 }
 
-/* footer */
-
 footer {
   position: static !important;
   width: 100%;
@@ -132,28 +127,233 @@ footer a {
   color: #6ea8fe;
 }
 
-/* mobile */
+{}
+.error-page {
+  min-height: calc(100vh - 120px);
+  position: relative;
+  overflow: hidden;
 
-@media (max-width: 900px) {
-  .movies-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .movie-poster {
-    height: 400px;
-  }
+  background:
+          radial-gradient(
+                  circle at 50% 45%,
+                  rgba(40, 45, 55, 0.9) 0%,
+                  rgba(15, 17, 22, 1) 55%
+          );
+
+  color: #fff;
+}
+.error-content {
+  position: relative;
+  z-index: 5;
+
+  width: min(700px, 90%);
+
+  text-align: center;
+
+  padding: 60px 30px;
+}
+.error-number {
+  font-size: clamp(130px, 22vw, 260px);
+
+  line-height: 0.8;
+
+  font-weight: 900;
+
+  letter-spacing: -15px;
+
+  color: transparent;
+
+  background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #777b84 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  text-shadow:
+          0 20px 50px rgba(0, 0, 0, 0.7);
+
+  margin-bottom: 35px;
 }
 
-@media (max-width: 600px) {
-  .movies-grid {
-    grid-template-columns: 1fr;
-  }
+.error-number span {
+  color: #1db954;
 
-  .movies-page h1 {
-    font-size: 32px;
-  }
+  text-shadow:
+          0 0 30px rgba(29, 185, 84, 0.25),
+          0 20px 50px rgba(0, 0, 0, 0.7);
+}
 
-  .movie-poster {
-    height: 450px;
-  }
+.error-line {
+  width: 70px;
+  height: 4px;
+
+  margin: 0 auto 25px;
+
+  border-radius: 10px;
+
+  background: #1db954;
+
+  box-shadow:
+          0 0 20px rgba(29, 185, 84, 0.4);
+}
+.error-content h1 {
+  margin: 0 0 15px;
+
+  font-size: clamp(26px, 4vw, 38px);
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+.error-content p {
+  max-width: 570px;
+
+  margin: 0 auto 35px;
+
+  color: #9da3ad;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+.home-button {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 25px;
+
+  border-radius: 10px;
+
+  background: #1db954;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  box-shadow:
+          0 8px 25px rgba(29, 185, 84, 0.18);
+
+  transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          box-shadow 0.2s ease;
+}
+
+.home-button span {
+  font-size: 20px;
+
+  transition:
+          transform 0.2s ease;
+}
+
+.home-button:hover {
+  color: white;
+
+  background: #20c963;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+          0 12px 35px rgba(29, 185, 84, 0.3);
+}
+
+.home-button:hover span {
+  transform: translateX(-4px);
+}
+
+.film-strip {
+  position: absolute;
+
+  left: -10%;
+
+  width: 120%;
+  height: 45px;
+
+  background:
+          repeating-linear-gradient(
+                  90deg,
+                  #08090c 0px,
+                  #08090c 35px,
+                  #1b1d22 35px,
+                  #1b1d22 55px
+          );
+
+  opacity: 0.7;
+}
+
+.film-strip::before,
+.film-strip::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  height: 10px;
+
+  background:
+          repeating-linear-gradient(
+                  90deg,
+                  transparent 0px,
+                  transparent 12px,
+                  #0b0c0f 12px,
+                  #0b0c0f 25px
+          );
+}
+
+.film-strip::before {
+  top: 5px;
+}
+
+.film-strip::after {
+  bottom: 5px;
+}
+
+.film-strip-top {
+  top: 70px;
+
+  transform: rotate(-3deg);
+}
+
+.film-strip-bottom {
+  bottom: 65px;
+
+  transform: rotate(3deg);
+}
+
+
+.movie-light {
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  left: 50%;
+  top: 45%;
+
+  transform: translate(-50%, -50%);
+
+  background:
+          radial-gradient(
+                  ellipse,
+                  rgba(255, 255, 255, 0.035) 0%,
+                  rgba(255, 255, 255, 0) 70%
+          );
+
+  pointer-events: none;
 }

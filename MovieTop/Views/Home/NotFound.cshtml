@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "404 — Фильм не найден";
+}
+
+<div class="error-page">
+
+    <div class="film-strip film-strip-top"></div>
+
+    <div class="error-content">
+
+        <div class="error-number">
+            4<span>0</span>4
+        </div>
+
+        <div class="error-line"></div>
+
+        <h1>Похоже, этой сцены не существует</h1>
+
+        <p>
+            Вы попали на страницу, которой нет в нашем фильме.
+            Возможно, вы ошиблись адресом или эта сцена была вырезана из финальной версии.
+        </p>
+
+        <a asp-controller="Home"
+           asp-action="Index"
+           class="home-button">
+            <span>←</span> Вернуться к фильмам
+        </a>
+
+    </div>
+
+    <div class="film-strip film-strip-bottom"></div>
+
+    <div class="movie-light"></div>
+
+</div>
