@@ -1,0 +1,35 @@
+﻿@model MovieTop.Models.Movie
+
+@{
+    ViewData["Title"] = "Фильм";
+}
+
+<div class="container mt-5">
+    <h1>@Model.Title</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="@Model.Poster"
+                 alt="@Model.Title"
+                 class="img-fluid rounded" />
+        </div>
+
+        <div class="col-md-8">
+            <p><strong>Режиссёр:</strong> @Model.Director</p>
+            <p><strong>Жанр:</strong> @Model.Genre</p>
+            <p><strong>Год:</strong> @Model.Year</p>
+            <p><strong>Описание:</strong> @Model.Description</p>
+
+            <a asp-action="Edit"
+               asp-route-id="@Model.Id"
+               class="btn btn-primary">
+                Изменить
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Назад
+            </a>
+        </div>
+    </div>
+</div>

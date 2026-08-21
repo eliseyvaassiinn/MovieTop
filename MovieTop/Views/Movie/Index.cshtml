@@ -1,0 +1,42 @@
+﻿@model IEnumerable<MovieTop.Models.Movie>
+
+@{
+    ViewData["Title"] = "Фильмы";
+}
+
+<div class="container mt-5">
+    <h1>Фильмы</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-success">Добавить фильм</a>
+    </p>
+
+    <table class="table table-dark table-striped">
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Режиссёр</th>
+            <th>Жанр</th>
+            <th>Год</th>
+            <th>Действия</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Title</td>
+                <td>@movie.Director</td>
+                <td>@movie.Genre</td>
+                <td>@movie.Year</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@movie.Id">Подробнее</a> |
+                    <a asp-action="Edit" asp-route-id="@movie.Id">Изменить</a> |
+                    <a asp-action="Delete" asp-route-id="@movie.Id">Удалить</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
