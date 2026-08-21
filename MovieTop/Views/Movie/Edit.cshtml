@@ -7,33 +7,50 @@
 <div class="container mt-5">
     <h1>Изменить фильм</h1>
 
-    <form asp-action="Edit" method="post">
+    <form asp-action="Edit"
+          method="post"
+          enctype="multipart/form-data">
 
         <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Poster" />
+
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger mb-3"></div>
 
         <div class="mb-3">
             <label asp-for="Title" class="form-label">Название</label>
             <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title"
+                  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="Director" class="form-label">Режиссёр</label>
             <input asp-for="Director" class="form-control" />
+            <span asp-validation-for="Director"
+                  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="Genre" class="form-label">Жанр</label>
             <input asp-for="Genre" class="form-control" />
+            <span asp-validation-for="Genre"
+                  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="Year" class="form-label">Год выпуска</label>
             <input asp-for="Year" class="form-control" />
+            <span asp-validation-for="Year"
+                  class="text-danger"></span>
         </div>
 
         <div class="mb-3">
-            <label asp-for="Poster" class="form-label">Путь к постеру</label>
-            <input asp-for="Poster" class="form-control" />
+            <label class="form-label">Новый постер</label>
+            <input type="file"
+                   name="posterFile"
+                   class="form-control"
+                   accept="image/*" />
         </div>
 
         <div class="mb-3">
@@ -41,9 +58,12 @@
             <textarea asp-for="Description"
                       class="form-control"
                       rows="5"></textarea>
+            <span asp-validation-for="Description"
+                  class="text-danger"></span>
         </div>
 
-        <button type="submit" class="btn btn-primary">
+        <button type="submit"
+                class="btn btn-primary">
             Сохранить
         </button>
 
@@ -53,3 +73,7 @@
         </a>
     </form>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

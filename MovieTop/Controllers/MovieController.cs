@@ -7,10 +7,14 @@ namespace MovieTop.Controllers;
 public class MovieController : Controller
 {
     private readonly MovieContext _context;
+    private readonly IWebHostEnvironment _environment;
 
-    public MovieController(MovieContext context)
+    public MovieController(
+        MovieContext context,
+        IWebHostEnvironment environment)
     {
         _context = context;
+        _environment = environment;
     }
 
     public async Task<IActionResult> Index()
@@ -40,10 +44,29 @@ public class MovieController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(Movie movie)
+    public async Task<IActionResult> Create(Movie movie, IFormFile? posterFile)
     {
         if (!ModelState.IsValid)
             return View(movie);
+
+        if (posterFile != null && posterFile.Length > 0)
+        {
+            var uploadsFolder = Path.Combine(
+                _environment.WebRootPath,
+                "images");
+
+            Directory.CreateDirectory(uploadsFolder);
+
+            var extension = Path.GetExtension(posterFile.FileName);
+            var fileName = Guid.NewGuid() + extension;
+
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using var stream = new FileStream(filePath, FileMode.Create);
+            await posterFile.CopyToAsync(stream);
+
+            movie.Poster = "/images/" + fileName;
+        }
 
         _context.Movies.Add(movie);
         await _context.SaveChangesAsync();
@@ -66,13 +89,35 @@ public class MovieController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, Movie movie)
+    public async Task<IActionResult> Edit(
+        int id,
+        Movie movie,
+        IFormFile? posterFile)
     {
         if (id != movie.Id)
             return NotFound();
 
         if (!ModelState.IsValid)
             return View(movie);
+
+        if (posterFile != null && posterFile.Length > 0)
+        {
+            var uploadsFolder = Path.Combine(
+                _environment.WebRootPath,
+                "images");
+
+            Directory.CreateDirectory(uploadsFolder);
+
+            var extension = Path.GetExtension(posterFile.FileName);
+            var fileName = Guid.NewGuid() + extension;
+
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using var stream = new FileStream(filePath, FileMode.Create);
+            await posterFile.CopyToAsync(stream);
+
+            movie.Poster = "/images/" + fileName;
+        }
 
         _context.Movies.Update(movie);
         await _context.SaveChangesAsync();
