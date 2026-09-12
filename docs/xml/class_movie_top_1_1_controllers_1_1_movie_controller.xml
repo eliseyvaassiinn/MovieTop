@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_movie_top_1_1_controllers_1_1_movie_controller" kind="class" language="C#" prot="public">
+    <compoundname>MovieTop::Controllers::MovieController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Controller</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_movie_top_1_1_controllers_1_1_movie_controller_1a9365d45f58445101846cbae4d8acdba0" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref></type>
+        <definition>readonly MovieContext MovieTop.Controllers.MovieController._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>MovieTop.Controllers.MovieController._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="12" column="35" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_movie_top_1_1_controllers_1_1_movie_controller_1aec4080c7adcbb520819e8c0cb8dac7a9" prot="private" static="no" mutable="no">
+        <type>readonly IWebHostEnvironment</type>
+        <definition>readonly IWebHostEnvironment MovieTop.Controllers.MovieController._environment</definition>
+        <argsstring></argsstring>
+        <name>_environment</name>
+        <qualifiedname>MovieTop.Controllers.MovieController._environment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="13" column="42" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1a894a51e4007b5c03a5e17e3cabb5b10a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MovieTop.Controllers.MovieController.MovieController</definition>
+        <argsstring>(MovieContext context, IWebHostEnvironment environment)</argsstring>
+        <name>MovieController</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.MovieController</qualifiedname>
+        <param>
+          <type><ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>environment</declname>
+        </param>
+        <briefdescription>
+<para>Инициализирует контроллер фильмов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контекст базы данных фильмов.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>environment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Окружение веб-приложения для работы с файлами.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="20" column="12" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1a5403cb2fbd965f56434266efba2df6ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.Index</definition>
+        <argsstring>()</argsstring>
+        <name>Index</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Index</qualifiedname>
+        <briefdescription>
+<para>Возвращает список всех фильмов. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Представление со списком фильмов.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="32" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1a630702dc37f17a7052ca47635463d141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.Details</definition>
+        <argsstring>(int? id)</argsstring>
+        <name>Details</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Details</qualifiedname>
+        <param>
+          <type>int?</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Возвращает подробную информацию о выбранном фильме. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор фильма.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление с информацией о фильме или результат 404.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="44" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="44" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1ab158de587400e293315c95db43218e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult MovieTop.Controllers.MovieController.Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Create</qualifiedname>
+        <briefdescription>
+<para>Открывает форму создания нового фильма. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Представление с формой создания фильма.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="62" column="26" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1ac8e8d477a7f107cd254c4c113878222c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.Create</definition>
+        <argsstring>(Movie movie, IFormFile? posterFile)</argsstring>
+        <name>Create</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Create</qualifiedname>
+        <param>
+          <type><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></type>
+          <declname>movie</declname>
+        </param>
+        <param>
+          <type>IFormFile?</type>
+          <declname>posterFile</declname>
+        </param>
+        <briefdescription>
+<para>Создаёт новый фильм и сохраняет его в базе данных. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>movie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Данные нового фильма.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posterFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Файл постера фильма.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Перенаправление к списку фильмов или форма с ошибками валидации.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="75" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="75" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1aff763741b4e7a6078ae850e157d2e301" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.Edit</definition>
+        <argsstring>(int? id)</argsstring>
+        <name>Edit</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Edit</qualifiedname>
+        <param>
+          <type>int?</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Открывает форму редактирования фильма. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор фильма.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление с формой редактирования или результат 404.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="110" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="110" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1a9cf9811aa65bce47a117c2b14e98750e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.Edit</definition>
+        <argsstring>(int id, Movie movie, IFormFile? posterFile)</argsstring>
+        <name>Edit</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Edit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></type>
+          <declname>movie</declname>
+        </param>
+        <param>
+          <type>IFormFile?</type>
+          <declname>posterFile</declname>
+        </param>
+        <briefdescription>
+<para>Обновляет данные существующего фильма. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор редактируемого фильма.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>movie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Обновлённые данные фильма.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posterFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый файл постера фильма.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Перенаправление к списку фильмов или форма с ошибками валидации.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="132" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="132" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1afed8ab405c02ce994c520355deb08130" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.Delete</definition>
+        <argsstring>(int? id)</argsstring>
+        <name>Delete</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.Delete</qualifiedname>
+        <param>
+          <type>int?</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Открывает страницу подтверждения удаления фильма. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор фильма.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Представление подтверждения удаления или результат 404.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="173" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="173" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_movie_controller_1adce2566bf4c285fc7ce41f8bb8b3c523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.MovieController.DeleteConfirmed</definition>
+        <argsstring>(int id)</argsstring>
+        <name>DeleteConfirmed</name>
+        <qualifiedname>MovieTop.Controllers.MovieController.DeleteConfirmed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет фильм из базы данных. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Идентификатор удаляемого фильма.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Перенаправление к списку фильмов.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/MovieController.cs" line="194" column="23" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="194" bodyend="205"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Контроллер для управления фильмами. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Controller</label>
+      </node>
+      <node id="1">
+        <label>MovieTop.Controllers.MovieController</label>
+        <link refid="class_movie_top_1_1_controllers_1_1_movie_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Controller</label>
+      </node>
+      <node id="1">
+        <label>MovieTop.Controllers.MovieController</label>
+        <link refid="class_movie_top_1_1_controllers_1_1_movie_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="MovieTop/Controllers/MovieController.cs" line="10" column="7" bodyfile="MovieTop/Controllers/MovieController.cs" bodystart="11" bodyend="206"/>
+    <listofallmembers>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a9365d45f58445101846cbae4d8acdba0" prot="private" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>_context</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1aec4080c7adcbb520819e8c0cb8dac7a9" prot="private" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>_environment</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1ab158de587400e293315c95db43218e4a" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Create</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1ac8e8d477a7f107cd254c4c113878222c" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Create</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1afed8ab405c02ce994c520355deb08130" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Delete</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1adce2566bf4c285fc7ce41f8bb8b3c523" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>DeleteConfirmed</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a630702dc37f17a7052ca47635463d141" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Details</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1aff763741b4e7a6078ae850e157d2e301" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Edit</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a9cf9811aa65bce47a117c2b14e98750e" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Edit</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a5403cb2fbd965f56434266efba2df6ec" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>Index</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a894a51e4007b5c03a5e17e3cabb5b10a" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::MovieController</scope><name>MovieController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

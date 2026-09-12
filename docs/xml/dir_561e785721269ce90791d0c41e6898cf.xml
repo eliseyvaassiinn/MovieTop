@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="dir_561e785721269ce90791d0c41e6898cf" kind="dir">
+    <compoundname>MovieTop</compoundname>
+    <innerdir refid="dir_ad06b194c6b7fae758719e225d149f48">MovieTop/Controllers</innerdir>
+    <innerdir refid="dir_b92bc618191f1b9608a3cb62c89732fe">MovieTop/Models</innerdir>
+    <innerdir refid="dir_c522e587cee26138073899c14608a904">MovieTop/obj</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/"/>
+  </compounddef>
+</doxygen>

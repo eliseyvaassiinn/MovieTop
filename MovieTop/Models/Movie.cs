@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using MovieTop.Validation;
 
 namespace MovieTop.Models;
 
@@ -8,6 +9,7 @@ public class Movie
 
     [Required(ErrorMessage = "введите название фильма")]
     [StringLength(100, ErrorMessage = "название не должно превышать 100 символов")]
+    [NoDigits]
     public string Title { get; set; } = "";
 
     [Required(ErrorMessage = "введите режиссёра")]

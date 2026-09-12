@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="_error_view_model_8cs" kind="file" language="C#">
+    <compoundname>ErrorViewModel.cs</compoundname>
+    <innerclass refid="class_movie_top_1_1_models_1_1_error_view_model" prot="public">MovieTop::Models::ErrorViewModel</innerclass>
+    <innernamespace refid="namespace_movie_top">MovieTop</innernamespace>
+    <innernamespace refid="namespace_movie_top_1_1_models">MovieTop::Models</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_movie_top_1_1_models" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_movie_top_1_1_models" kindref="compound">MovieTop.Models</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_movie_top_1_1_models_1_1_error_view_model" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_movie_top_1_1_models_1_1_error_view_model" kindref="compound">ErrorViewModel</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">?<sp/><ref refid="class_movie_top_1_1_models_1_1_error_view_model_1abc7f16f8f846084eabdd59d35b9d5ad7" kindref="member">RequestId</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_error_view_model_1a69acae7b9aa1c3fdc78a8fed93d032b0" kindref="member">ShowRequestId</ref><sp/>=&gt;<sp/>!</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">.IsNullOrEmpty(<ref refid="class_movie_top_1_1_models_1_1_error_view_model_1abc7f16f8f846084eabdd59d35b9d5ad7" kindref="member">RequestId</ref>);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="MovieTop/Models/ErrorViewModel.cs"/>
+  </compounddef>
+</doxygen>

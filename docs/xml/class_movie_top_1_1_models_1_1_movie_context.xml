@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_movie_top_1_1_models_1_1_movie_context" kind="class" language="C#" prot="public">
+    <compoundname>MovieTop::Models::MovieContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbContext</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_context_1aaee11e2767ecb74915b4217d963eec55" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> &gt;</type>
+        <definition>DbSet&lt;Movie&gt; MovieTop.Models.MovieContext.Movies</definition>
+        <argsstring></argsstring>
+        <name>Movies</name>
+        <qualifiedname>MovieTop.Models.MovieContext.Movies</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/MovieContext.cs" line="12" column="18" bodyfile="MovieTop/Models/MovieContext.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_movie_top_1_1_models_1_1_movie_context_1a3cf87e52c8acb637776051f33fb12614" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MovieTop.Models.MovieContext.MovieContext</definition>
+        <argsstring>(DbContextOptions&lt; MovieContext &gt; options)</argsstring>
+        <name>MovieContext</name>
+        <qualifiedname>MovieTop.Models.MovieContext.MovieContext</qualifiedname>
+        <param>
+          <type>DbContextOptions&lt; MovieContext &gt;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/MovieContext.cs" line="7" column="12" bodyfile="MovieTop/Models/MovieContext.cs" bodystart="7" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>MovieTop.Models.MovieContext</label>
+        <link refid="class_movie_top_1_1_models_1_1_movie_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>MovieTop.Models.MovieContext</label>
+        <link refid="class_movie_top_1_1_models_1_1_movie_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="MovieTop/Models/MovieContext.cs" line="5" column="7" bodyfile="MovieTop/Models/MovieContext.cs" bodystart="6" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_movie_top_1_1_models_1_1_movie_context_1a3cf87e52c8acb637776051f33fb12614" prot="public" virt="non-virtual"><scope>MovieTop::Models::MovieContext</scope><name>MovieContext</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_context_1aaee11e2767ecb74915b4217d963eec55" prot="public" virt="non-virtual"><scope>MovieTop::Models::MovieContext</scope><name>Movies</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

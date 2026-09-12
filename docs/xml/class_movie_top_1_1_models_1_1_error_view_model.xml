@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_movie_top_1_1_models_1_1_error_view_model" kind="class" language="C#" prot="public">
+    <compoundname>MovieTop::Models::ErrorViewModel</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_error_view_model_1abc7f16f8f846084eabdd59d35b9d5ad7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? MovieTop.Models.ErrorViewModel.RequestId</definition>
+        <argsstring></argsstring>
+        <name>RequestId</name>
+        <qualifiedname>MovieTop.Models.ErrorViewModel.RequestId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/ErrorViewModel.cs" line="5" column="19" bodyfile="MovieTop/Models/ErrorViewModel.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_error_view_model_1a69acae7b9aa1c3fdc78a8fed93d032b0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool MovieTop.Models.ErrorViewModel.ShowRequestId</definition>
+        <argsstring></argsstring>
+        <name>ShowRequestId</name>
+        <qualifiedname>MovieTop.Models.ErrorViewModel.ShowRequestId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/ErrorViewModel.cs" line="7" column="17" bodyfile="MovieTop/Models/ErrorViewModel.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/Models/ErrorViewModel.cs" line="3" column="7" bodyfile="MovieTop/Models/ErrorViewModel.cs" bodystart="4" bodyend="8"/>
+    <listofallmembers>
+      <member refid="class_movie_top_1_1_models_1_1_error_view_model_1abc7f16f8f846084eabdd59d35b9d5ad7" prot="public" virt="non-virtual"><scope>MovieTop::Models::ErrorViewModel</scope><name>RequestId</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_error_view_model_1a69acae7b9aa1c3fdc78a8fed93d032b0" prot="public" virt="non-virtual"><scope>MovieTop::Models::ErrorViewModel</scope><name>ShowRequestId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

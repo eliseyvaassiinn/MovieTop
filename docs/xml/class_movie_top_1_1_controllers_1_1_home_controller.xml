@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_movie_top_1_1_controllers_1_1_home_controller" kind="class" language="C#" prot="public">
+    <compoundname>MovieTop::Controllers::HomeController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Controller</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_movie_top_1_1_controllers_1_1_home_controller_1a8bd30bfa7a272eea0cc509c12c9ff9cd" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref></type>
+        <definition>readonly MovieContext MovieTop.Controllers.HomeController._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>MovieTop.Controllers.HomeController._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/HomeController.cs" line="9" column="35" bodyfile="MovieTop/Controllers/HomeController.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_home_controller_1a175480c3067348872de91a1cd98caffc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MovieTop.Controllers.HomeController.HomeController</definition>
+        <argsstring>(MovieContext context)</argsstring>
+        <name>HomeController</name>
+        <qualifiedname>MovieTop.Controllers.HomeController.HomeController</qualifiedname>
+        <param>
+          <type><ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/HomeController.cs" line="11" column="12" bodyfile="MovieTop/Controllers/HomeController.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_home_controller_1aa7b039163a457ec8f3645b80a7f49ac4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; MovieTop.Controllers.HomeController.Index</definition>
+        <argsstring>()</argsstring>
+        <name>Index</name>
+        <qualifiedname>MovieTop.Controllers.HomeController.Index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/HomeController.cs" line="16" column="23" bodyfile="MovieTop/Controllers/HomeController.cs" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_movie_top_1_1_controllers_1_1_home_controller_1a3905308b9888ad32b68c993a632636f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult MovieTop.Controllers.HomeController.NotFound</definition>
+        <argsstring>()</argsstring>
+        <name>NotFound</name>
+        <qualifiedname>MovieTop.Controllers.HomeController.NotFound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Controllers/HomeController.cs" line="23" column="26" bodyfile="MovieTop/Controllers/HomeController.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Controller</label>
+      </node>
+      <node id="1">
+        <label>MovieTop.Controllers.HomeController</label>
+        <link refid="class_movie_top_1_1_controllers_1_1_home_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Controller</label>
+      </node>
+      <node id="1">
+        <label>MovieTop.Controllers.HomeController</label>
+        <link refid="class_movie_top_1_1_controllers_1_1_home_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="MovieTop/Controllers/HomeController.cs" line="7" column="7" bodyfile="MovieTop/Controllers/HomeController.cs" bodystart="8" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1a8bd30bfa7a272eea0cc509c12c9ff9cd" prot="private" virt="non-virtual"><scope>MovieTop::Controllers::HomeController</scope><name>_context</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1a175480c3067348872de91a1cd98caffc" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::HomeController</scope><name>HomeController</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1aa7b039163a457ec8f3645b80a7f49ac4" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::HomeController</scope><name>Index</name></member>
+      <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1a3905308b9888ad32b68c993a632636f1" prot="public" virt="non-virtual"><scope>MovieTop::Controllers::HomeController</scope><name>NotFound</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

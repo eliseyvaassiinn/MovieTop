@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="namespace_movie_top_1_1_controllers" kind="namespace" language="C#">
+    <compoundname>MovieTop::Controllers</compoundname>
+    <innerclass refid="class_movie_top_1_1_controllers_1_1_home_controller" prot="public">MovieTop::Controllers::HomeController</innerclass>
+    <innerclass refid="class_movie_top_1_1_controllers_1_1_movie_controller" prot="public">MovieTop::Controllers::MovieController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/Controllers/HomeController.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

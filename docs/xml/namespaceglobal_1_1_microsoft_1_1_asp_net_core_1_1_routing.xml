@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace" language="C#">
+    <compoundname>global::Microsoft::AspNetCore::Routing</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/obj/Debug/net9.0/MovieTop.GlobalUsings.g.cs" line="5" column="50"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <innernamespace refid="namespacevar">var</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_program_8cs_1a42c100dfc361bc9612728d18ff6e5e7c" prot="public" static="no">
+        <type>app.Services.CreateScope()) { var db=scope.ServiceProvider.GetRequiredService&lt; <ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref> &gt;(); db.Database.EnsureCreated(); <ref refid="_program_8cs_1af2d0c02efe3fbc2d94e5b6e316777c4d" kindref="member">if</ref>(!db.Movies.Any()) { db.Movies.AddRange( new <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> { Title=&quot;Тед&quot;, Director=&quot;Сет Макфарлейн&quot;, Genre=&quot;комедия&quot;, Year=2012, Poster=&quot;/images/ted.webp&quot;, Description=&quot;Джон пытается сохранить отношения с девушкой, несмотря на своего говорящего плюшевого медведя Теда.&quot; }, new <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> { Title=&quot;Тед 2&quot;, Director=&quot;Сет Макфарлейн&quot;, Genre=&quot;комедия&quot;, Year=2015, Poster=&quot;/images/ted2.webp&quot;, Description=&quot;Тед хочет доказать, что он является настоящей личностью и имеет право на собственную жизнь.&quot; }, new <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> { Title=&quot;Человек-паук&quot;, Director=&quot;Сэм Рэйми&quot;, Genre=&quot;боевик, фантастика&quot;, Year=2002, Poster=&quot;/images/spiderman.jpg&quot;, Description=&quot;Питер Паркер получает сверхспособности и начинает бороться с преступностью в Нью-Йорке.&quot; }, new <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> { Title=&quot;Астрал&quot;, Director=&quot;Джеймс Ван&quot;, Genre=&quot;ужасы&quot;, Year=2010, Poster=&quot;/images/astral.jpg&quot;, Description=&quot;Семья сталкивается с потусторонними силами после того, как их сын впадает в загадочную кому.&quot; }, new <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> { Title=&quot;Мир Юрского периода&quot;, Director=&quot;Колин Треворроу&quot;, Genre=&quot;фантастика, приключения&quot;, Year=2015, Poster=&quot;/images/Jurassic_World.jpg&quot;, Description=&quot;Огромный парк с динозаврами выходит из-под контроля после создания нового опасного хищника.&quot; }, new <ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref> { Title=&quot;Крик&quot;, Director=&quot;Уэс Крэйвен&quot;, Genre=&quot;ужасы, триллер&quot;, Year=1996, Poster=&quot;/images/scream.jpg&quot;, Description=&quot;Таинственный убийца в маске начинает охоту на подростков небольшого американского города.&quot; }); db.SaveChanges(); } } app.Run()</type>
+        <definition>using scope =  app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService&lt;MovieContext&gt;();
+
+    db.Database.EnsureCreated();
+
+    if (!db.Movies.Any())
+    {
+        db.Movies.AddRange(
+            new Movie
+            {
+                Title = &quot;Тед&quot;,
+                Director = &quot;Сет Макфарлейн&quot;,
+                Genre = &quot;комедия&quot;,
+                Year = 2012,
+                Poster = &quot;/images/ted.webp&quot;,
+                Description = &quot;Джон пытается сохранить отношения с девушкой, несмотря на своего говорящего плюшевого медведя Теда.&quot;
+            },
+
+            new Movie
+            {
+                Title = &quot;Тед 2&quot;,
+                Director = &quot;Сет Макфарлейн&quot;,
+                Genre = &quot;комедия&quot;,
+                Year = 2015,
+                Poster = &quot;/images/ted2.webp&quot;,
+                Description = &quot;Тед хочет доказать, что он является настоящей личностью и имеет право на собственную жизнь.&quot;
+            },
+
+            new Movie
+            {
+                Title = &quot;Человек-паук&quot;,
+                Director = &quot;Сэм Рэйми&quot;,
+                Genre = &quot;боевик, фантастика&quot;,
+                Year = 2002,
+                Poster = &quot;/images/spiderman.jpg&quot;,
+                Description = &quot;Питер Паркер получает сверхспособности и начинает бороться с преступностью в Нью-Йорке.&quot;
+            },
+
+            new Movie
+            {
+                Title = &quot;Астрал&quot;,
+                Director = &quot;Джеймс Ван&quot;,
+                Genre = &quot;ужасы&quot;,
+                Year = 2010,
+                Poster = &quot;/images/astral.jpg&quot;,
+                Description = &quot;Семья сталкивается с потусторонними силами после того, как их сын впадает в загадочную кому.&quot;
+            },
+
+            new Movie
+            {
+                Title = &quot;Мир Юрского периода&quot;,
+                Director = &quot;Колин Треворроу&quot;,
+                Genre = &quot;фантастика, приключения&quot;,
+                Year = 2015,
+                Poster = &quot;/images/Jurassic_World.jpg&quot;,
+                Description = &quot;Огромный парк с динозаврами выходит из-под контроля после создания нового опасного хищника.&quot;
+            },
+
+            new Movie
+            {
+                Title = &quot;Крик&quot;,
+                Director = &quot;Уэс Крэйвен&quot;,
+                Genre = &quot;ужасы, триллер&quot;,
+                Year = 1996,
+                Poster = &quot;/images/scream.jpg&quot;,
+                Description = &quot;Таинственный убийца в маске начинает охоту на подростков небольшого американского города.&quot;
+            }
+        );
+
+        db.SaveChanges();
+    }
+}
+
+app.Run()</definition>
+        <argsstring></argsstring>
+        <name>scope</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="34" column="1" bodyfile="MovieTop/Program.cs" bodystart="34" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <initializer>= WebApplication.CreateBuilder(args)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="4" column="5" bodyfile="MovieTop/Program.cs" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <initializer>= builder.Build()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="12" column="5" bodyfile="MovieTop/Program.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8cs_1af8107f2f8ff8e8de22a684c8c8ad3e99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddControllersWithViews</definition>
+        <argsstring>()</argsstring>
+        <name>AddControllersWithViews</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="6" column="16" declfile="MovieTop/Program.cs" declline="6" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ae5eb5f0f0d8bac5f434845e04b840c5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddDbContext&lt; MovieContext &gt;</definition>
+        <argsstring>(options=&gt; options.UseSqlite(builder.Configuration.GetConnectionString(&quot;DefaultConnection&quot;)))</argsstring>
+        <name>AddDbContext&lt; MovieContext &gt;</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>options.</type>
+          <declname>UseSqlite</declname>
+          <array>builder.Configuration.GetConnectionString(&quot;DefaultConnection&quot;)</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="8" column="8" declfile="MovieTop/Program.cs" declline="8" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1af2d0c02efe3fbc2d94e5b6e316777c4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>(!app.Environment.IsDevelopment())</argsstring>
+        <name>if</name>
+        <param>
+          <type>!app.Environment.</type>
+          <declname>IsDevelopment</declname>
+          <defname>app::Environment::IsDevelopment</defname>
+          <array>()</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="14" column="1" bodyfile="MovieTop/Program.cs" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseHttpsRedirection</definition>
+        <argsstring>()</argsstring>
+        <name>UseHttpsRedirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="20" column="4" declfile="MovieTop/Program.cs" declline="20" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a17c06b2b590d62952d067d86b6fd216a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseStatusCodePagesWithReExecute</definition>
+        <argsstring>(&quot;/Home/NotFound&quot;)</argsstring>
+        <name>UseStatusCodePagesWithReExecute</name>
+        <param>
+          <type>&quot;/Home/NotFound&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="22" column="4" declfile="MovieTop/Program.cs" declline="22" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a906a3ce545279a7a73941f1d7b64d7cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseStaticFiles</definition>
+        <argsstring>()</argsstring>
+        <name>UseStaticFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="24" column="4" declfile="MovieTop/Program.cs" declline="24" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a94c810d266751293a2d511a720a5625f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseRouting</definition>
+        <argsstring>()</argsstring>
+        <name>UseRouting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="26" column="4" declfile="MovieTop/Program.cs" declline="26" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseAuthorization</definition>
+        <argsstring>()</argsstring>
+        <name>UseAuthorization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="28" column="4" declfile="MovieTop/Program.cs" declline="28" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aec500e125fbbfcd3d99a23db7de60be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapControllerRoute</definition>
+        <argsstring>(name:&quot;default&quot;, pattern:&quot;{controller=Home}/{action=Index}/{id?}&quot;)</argsstring>
+        <name>MapControllerRoute</name>
+        <param>
+          <type>name:&quot;default&quot;</type>
+        </param>
+        <param>
+          <type>pattern:&quot;{controller=Home}/{action=Index}/{id?}&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Program.cs" line="30" column="4" declfile="MovieTop/Program.cs" declline="30" declcolumn="4"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_movie_top_1_1_models" kindref="compound">MovieTop.Models</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=<sp/>WebApplication.CreateBuilder(args);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddControllersWithViews();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddDbContext&lt;<ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref>&gt;(options<sp/>=&gt;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>options.UseSqlite(</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Configuration.GetConnectionString(</highlight><highlight class="stringliteral">&quot;DefaultConnection&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref><sp/>=<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Build();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Environment.IsDevelopment())</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseExceptionHandler(</highlight><highlight class="stringliteral">&quot;/Home/Error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseHsts();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseHttpsRedirection();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseStatusCodePagesWithReExecute(</highlight><highlight class="stringliteral">&quot;/Home/NotFound&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseStaticFiles();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseRouting();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseAuthorization();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapControllerRoute(</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>name:<sp/></highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>pattern:<sp/></highlight><highlight class="stringliteral">&quot;{controller=Home}/{action=Index}/{id?}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>(var<sp/><ref refid="_program_8cs_1a42c100dfc361bc9612728d18ff6e5e7c" kindref="member">scope</ref><sp/>=<sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Services.CreateScope())</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>db<sp/>=<sp/><ref refid="_program_8cs_1a42c100dfc361bc9612728d18ff6e5e7c" kindref="member">scope</ref>.ServiceProvider.GetRequiredService&lt;<ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref>&gt;();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>db.Database.EnsureCreated();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!db.Movies.Any())</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>db.Movies.AddRange(</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Тед&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Director<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Сет<sp/>Макфарлейн&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Genre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;комедия&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Year<sp/>=<sp/>2012,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Poster<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/images/ted.webp&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Джон<sp/>пытается<sp/>сохранить<sp/>отношения<sp/>с<sp/>девушкой,<sp/>несмотря<sp/>на<sp/>своего<sp/>говорящего<sp/>плюшевого<sp/>медведя<sp/>Теда.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Тед<sp/>2&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Director<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Сет<sp/>Макфарлейн&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Genre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;комедия&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Year<sp/>=<sp/>2015,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Poster<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/images/ted2.webp&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Тед<sp/>хочет<sp/>доказать,<sp/>что<sp/>он<sp/>является<sp/>настоящей<sp/>личностью<sp/>и<sp/>имеет<sp/>право<sp/>на<sp/>собственную<sp/>жизнь.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Человек-паук&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Director<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Сэм<sp/>Рэйми&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Genre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;боевик,<sp/>фантастика&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Year<sp/>=<sp/>2002,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Poster<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/images/spiderman.jpg&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Питер<sp/>Паркер<sp/>получает<sp/>сверхспособности<sp/>и<sp/>начинает<sp/>бороться<sp/>с<sp/>преступностью<sp/>в<sp/>Нью-Йорке.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Астрал&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Director<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Джеймс<sp/>Ван&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Genre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ужасы&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Year<sp/>=<sp/>2010,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Poster<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/images/astral.jpg&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Семья<sp/>сталкивается<sp/>с<sp/>потусторонними<sp/>силами<sp/>после<sp/>того,<sp/>как<sp/>их<sp/>сын<sp/>впадает<sp/>в<sp/>загадочную<sp/>кому.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Мир<sp/>Юрского<sp/>периода&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Director<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Колин<sp/>Треворроу&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Genre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;фантастика,<sp/>приключения&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Year<sp/>=<sp/>2015,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Poster<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/images/Jurassic_World.jpg&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Огромный<sp/>парк<sp/>с<sp/>динозаврами<sp/>выходит<sp/>из-под<sp/>контроля<sp/>после<sp/>создания<sp/>нового<sp/>опасного<sp/>хищника.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_models_1_1_movie" kindref="compound">Movie</ref></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Title<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Крик&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Director<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Уэс<sp/>Крэйвен&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Genre<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ужасы,<sp/>триллер&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Year<sp/>=<sp/>1996,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Poster<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/images/scream.jpg&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Description<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Таинственный<sp/>убийца<sp/>в<sp/>маске<sp/>начинает<sp/>охоту<sp/>на<sp/>подростков<sp/>небольшого<sp/>американского<sp/>города.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>db.SaveChanges();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Run();</highlight></codeline>
+    </programlisting>
+    <location file="MovieTop/Program.cs"/>
+  </compounddef>
+</doxygen>

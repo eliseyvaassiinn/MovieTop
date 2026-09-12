@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="dir_c522e587cee26138073899c14608a904" kind="dir">
+    <compoundname>MovieTop/obj</compoundname>
+    <innerdir refid="dir_5e21dc235579d40e400b9ed90a804a40">MovieTop/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/obj/"/>
+  </compounddef>
+</doxygen>

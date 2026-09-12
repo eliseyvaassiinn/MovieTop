@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="_home_controller_8cs" kind="file" language="C#">
+    <compoundname>HomeController.cs</compoundname>
+    <innerclass refid="class_movie_top_1_1_controllers_1_1_home_controller" prot="public">MovieTop::Controllers::HomeController</innerclass>
+    <innernamespace refid="namespace_movie_top">MovieTop</innernamespace>
+    <innernamespace refid="namespace_movie_top_1_1_controllers">MovieTop::Controllers</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc">Microsoft::AspNetCore::Mvc</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_entity_framework_core">Microsoft::EntityFrameworkCore</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Mvc;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_movie_top_1_1_models" kindref="compound">MovieTop.Models</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_movie_top" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_movie_top_1_1_controllers" kindref="compound">MovieTop.Controllers</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_movie_top_1_1_controllers_1_1_home_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_movie_top_1_1_controllers_1_1_home_controller_1a175480c3067348872de91a1cd98caffc" kindref="member">HomeController</ref><sp/>:<sp/>Controller</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>readonly<sp/><ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref><sp/>_context;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_movie_top_1_1_controllers_1_1_home_controller_1a175480c3067348872de91a1cd98caffc" kindref="member">HomeController</ref>(<ref refid="class_movie_top_1_1_models_1_1_movie_context" kindref="compound">MovieContext</ref><sp/>context)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_context<sp/>=<sp/>context;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task&lt;IActionResult&gt;<sp/><ref refid="class_movie_top_1_1_controllers_1_1_home_controller_1aa7b039163a457ec8f3645b80a7f49ac4" kindref="member">Index</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>movies<sp/>=<sp/>await<sp/>_context.<ref refid="class_movie_top_1_1_models_1_1_movie_context_1aaee11e2767ecb74915b4217d963eec55" kindref="member">Movies</ref>.ToListAsync();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>View(movies);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IActionResult<sp/><ref refid="class_movie_top_1_1_controllers_1_1_home_controller_1a3905308b9888ad32b68c993a632636f1" kindref="member">NotFound</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>View();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="MovieTop/Controllers/HomeController.cs"/>
+  </compounddef>
+</doxygen>

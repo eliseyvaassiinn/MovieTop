@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.18.0" xml:lang="en-US">
+  <compound refid="class_movie_top_1_1_models_1_1_error_view_model" kind="class"><name>MovieTop::Models::ErrorViewModel</name>
+    <member refid="class_movie_top_1_1_models_1_1_error_view_model_1abc7f16f8f846084eabdd59d35b9d5ad7" kind="property"><name>RequestId</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_error_view_model_1a69acae7b9aa1c3fdc78a8fed93d032b0" kind="property"><name>ShowRequestId</name></member>
+  </compound>
+  <compound refid="class_movie_top_1_1_controllers_1_1_home_controller" kind="class"><name>MovieTop::Controllers::HomeController</name>
+    <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1a8bd30bfa7a272eea0cc509c12c9ff9cd" kind="variable"><name>_context</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1a175480c3067348872de91a1cd98caffc" kind="function"><name>HomeController</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1aa7b039163a457ec8f3645b80a7f49ac4" kind="function"><name>Index</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_home_controller_1a3905308b9888ad32b68c993a632636f1" kind="function"><name>NotFound</name></member>
+  </compound>
+  <compound refid="class_movie_top_1_1_models_1_1_movie" kind="class"><name>MovieTop::Models::Movie</name>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1a4a2f6f85c94c2e4a56cd4e26f7413cbb" kind="property"><name>Id</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1af6eb032218ac9a7bd939754c97bcd154" kind="property"><name>Title</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1ad8547d2e904622977491d5cf53bdc792" kind="property"><name>Director</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1a1218a24f4d7aad26c197eafe671011d6" kind="property"><name>Genre</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1a438389f111c7ace457486682bd0322fa" kind="property"><name>Year</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1a14382bf716ff46403772cc544507e4fd" kind="property"><name>Poster</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_1a0e2b69e72e697d1a21695fc40b5365e4" kind="property"><name>Description</name></member>
+  </compound>
+  <compound refid="class_movie_top_1_1_models_1_1_movie_context" kind="class"><name>MovieTop::Models::MovieContext</name>
+    <member refid="class_movie_top_1_1_models_1_1_movie_context_1aaee11e2767ecb74915b4217d963eec55" kind="property"><name>Movies</name></member>
+    <member refid="class_movie_top_1_1_models_1_1_movie_context_1a3cf87e52c8acb637776051f33fb12614" kind="function"><name>MovieContext</name></member>
+  </compound>
+  <compound refid="class_movie_top_1_1_controllers_1_1_movie_controller" kind="class"><name>MovieTop::Controllers::MovieController</name>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a9365d45f58445101846cbae4d8acdba0" kind="variable"><name>_context</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1aec4080c7adcbb520819e8c0cb8dac7a9" kind="variable"><name>_environment</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a894a51e4007b5c03a5e17e3cabb5b10a" kind="function"><name>MovieController</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a5403cb2fbd965f56434266efba2df6ec" kind="function"><name>Index</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a630702dc37f17a7052ca47635463d141" kind="function"><name>Details</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1ab158de587400e293315c95db43218e4a" kind="function"><name>Create</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1ac8e8d477a7f107cd254c4c113878222c" kind="function"><name>Create</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1aff763741b4e7a6078ae850e157d2e301" kind="function"><name>Edit</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1a9cf9811aa65bce47a117c2b14e98750e" kind="function"><name>Edit</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1afed8ab405c02ce994c520355deb08130" kind="function"><name>Delete</name></member>
+    <member refid="class_movie_top_1_1_controllers_1_1_movie_controller_1adce2566bf4c285fc7ce41f8bb8b3c523" kind="function"><name>DeleteConfirmed</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc" kind="namespace"><name>Microsoft::AspNetCore::Mvc</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core" kind="namespace"><name>Microsoft::EntityFrameworkCore</name>
+  </compound>
+  <compound refid="namespace_movie_top" kind="namespace"><name>MovieTop</name>
+  </compound>
+  <compound refid="namespace_movie_top_1_1_controllers" kind="namespace"><name>MovieTop::Controllers</name>
+  </compound>
+  <compound refid="namespace_movie_top_1_1_models" kind="namespace"><name>MovieTop::Models</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations" kind="namespace"><name>System::ComponentModel::DataAnnotations</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespacevar" kind="namespace"><name>var</name>
+  </compound>
+  <compound refid="_home_controller_8cs" kind="file"><name>HomeController.cs</name>
+  </compound>
+  <compound refid="_movie_controller_8cs" kind="file"><name>MovieController.cs</name>
+  </compound>
+  <compound refid="_error_view_model_8cs" kind="file"><name>ErrorViewModel.cs</name>
+  </compound>
+  <compound refid="_movie_8cs" kind="file"><name>Movie.cs</name>
+  </compound>
+  <compound refid="_movie_context_8cs" kind="file"><name>MovieContext.cs</name>
+  </compound>
+  <compound refid="_8_n_e_t_core_app_00_version_0av9_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v9.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_movie_top_8_assembly_info_8cs" kind="file"><name>MovieTop.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_movie_top_8_global_usings_8g_8cs" kind="file"><name>MovieTop.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_movie_top_8_razor_assembly_info_8cs" kind="file"><name>MovieTop.RazorAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a42c100dfc361bc9612728d18ff6e5e7c" kind="typedef"><name>scope</name></member>
+    <member refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_program_8cs_1af8107f2f8ff8e8de22a684c8c8ad3e99" kind="function"><name>AddControllersWithViews</name></member>
+    <member refid="_program_8cs_1ae5eb5f0f0d8bac5f434845e04b840c5c" kind="function"><name>AddDbContext&lt; MovieContext &gt;</name></member>
+    <member refid="_program_8cs_1af2d0c02efe3fbc2d94e5b6e316777c4d" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" kind="function"><name>UseHttpsRedirection</name></member>
+    <member refid="_program_8cs_1a17c06b2b590d62952d067d86b6fd216a" kind="function"><name>UseStatusCodePagesWithReExecute</name></member>
+    <member refid="_program_8cs_1a906a3ce545279a7a73941f1d7b64d7cf" kind="function"><name>UseStaticFiles</name></member>
+    <member refid="_program_8cs_1a94c810d266751293a2d511a720a5625f" kind="function"><name>UseRouting</name></member>
+    <member refid="_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" kind="function"><name>UseAuthorization</name></member>
+    <member refid="_program_8cs_1aec500e125fbbfcd3d99a23db7de60be7" kind="function"><name>MapControllerRoute</name></member>
+  </compound>
+  <compound refid="dir_ad06b194c6b7fae758719e225d149f48" kind="dir"><name>MovieTop/Controllers</name>
+  </compound>
+  <compound refid="dir_5e21dc235579d40e400b9ed90a804a40" kind="dir"><name>MovieTop/obj/Debug</name>
+  </compound>
+  <compound refid="dir_b92bc618191f1b9608a3cb62c89732fe" kind="dir"><name>MovieTop/Models</name>
+  </compound>
+  <compound refid="dir_561e785721269ce90791d0c41e6898cf" kind="dir"><name>MovieTop</name>
+  </compound>
+  <compound refid="dir_675213dd80d3893eb012dcd3ae77b4c9" kind="dir"><name>MovieTop/obj/Debug/net9.0</name>
+  </compound>
+  <compound refid="dir_c522e587cee26138073899c14608a904" kind="dir"><name>MovieTop/obj</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="class_movie_top_1_1_models_1_1_movie" kind="class" language="C#" prot="public">
+    <compoundname>MovieTop::Models::Movie</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1a4a2f6f85c94c2e4a56cd4e26f7413cbb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int MovieTop.Models.Movie.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>MovieTop.Models.Movie.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="7" column="16" bodyfile="MovieTop/Models/Movie.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1af6eb032218ac9a7bd939754c97bcd154" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string MovieTop.Models.Movie.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <qualifiedname>MovieTop.Models.Movie.Title</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="11" column="19" bodyfile="MovieTop/Models/Movie.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1ad8547d2e904622977491d5cf53bdc792" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string MovieTop.Models.Movie.Director</definition>
+        <argsstring></argsstring>
+        <name>Director</name>
+        <qualifiedname>MovieTop.Models.Movie.Director</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="15" column="19" bodyfile="MovieTop/Models/Movie.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1a1218a24f4d7aad26c197eafe671011d6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string MovieTop.Models.Movie.Genre</definition>
+        <argsstring></argsstring>
+        <name>Genre</name>
+        <qualifiedname>MovieTop.Models.Movie.Genre</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="19" column="19" bodyfile="MovieTop/Models/Movie.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1a438389f111c7ace457486682bd0322fa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int MovieTop.Models.Movie.Year</definition>
+        <argsstring></argsstring>
+        <name>Year</name>
+        <qualifiedname>MovieTop.Models.Movie.Year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="22" column="16" bodyfile="MovieTop/Models/Movie.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1a14382bf716ff46403772cc544507e4fd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string MovieTop.Models.Movie.Poster</definition>
+        <argsstring></argsstring>
+        <name>Poster</name>
+        <qualifiedname>MovieTop.Models.Movie.Poster</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="24" column="19" bodyfile="MovieTop/Models/Movie.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_movie_top_1_1_models_1_1_movie_1a0e2b69e72e697d1a21695fc40b5365e4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string MovieTop.Models.Movie.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>MovieTop.Models.Movie.Description</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MovieTop/Models/Movie.cs" line="28" column="19" bodyfile="MovieTop/Models/Movie.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/Models/Movie.cs" line="5" column="7" bodyfile="MovieTop/Models/Movie.cs" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1a0e2b69e72e697d1a21695fc40b5365e4" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Description</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1ad8547d2e904622977491d5cf53bdc792" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Director</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1a1218a24f4d7aad26c197eafe671011d6" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Genre</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1a4a2f6f85c94c2e4a56cd4e26f7413cbb" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Id</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1a14382bf716ff46403772cc544507e4fd" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Poster</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1af6eb032218ac9a7bd939754c97bcd154" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Title</name></member>
+      <member refid="class_movie_top_1_1_models_1_1_movie_1a438389f111c7ace457486682bd0322fa" prot="public" virt="non-virtual"><scope>MovieTop::Models::Movie</scope><name>Year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

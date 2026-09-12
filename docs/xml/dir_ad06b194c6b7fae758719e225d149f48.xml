@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="dir_ad06b194c6b7fae758719e225d149f48" kind="dir">
+    <compoundname>MovieTop/Controllers</compoundname>
+    <innerfile refid="_home_controller_8cs">HomeController.cs</innerfile>
+    <innerfile refid="_movie_controller_8cs">MovieController.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MovieTop/Controllers/"/>
+  </compounddef>
+</doxygen>
